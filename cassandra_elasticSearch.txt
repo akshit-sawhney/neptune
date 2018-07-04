@@ -1,0 +1,6 @@
+storage.backend=cassandra
+storage.hostname=localhost
+
+index.search.backend=elasticsearch
+index.search.hostname=100.100.101.1, 100.100.101.2
+index.search.elasticsearch.client-only=true

@@ -1,0 +1,32 @@
+Download:
+1. janusgraphHadoop-0.2.0
+2. Download Cassandra
+
+Running Cassandra:
+1. Change start_rpc:true in cassandra.yml
+2. Run bin/cassandra -f
+
+Running Elasticsearch
+
+Running janusgraph
+1. bin/gremlin.sh
+
+In gremlin console, Run
+// Passing path to the configuration file
+1. graph = JanusGraphFactory.open('conf/janusgraph-berkeleyje-es.properties')
+2. GraphOfTheGodsFactory.load(graph)
+3. g = graph.traversal()
+
+4.2.1.2. JanusGraph Embedded
+JanusGraphFactory can also be used to open an embedded JanusGraph graph instance from within 
+a JVM-based user application. In that case, JanusGraph is part of the user 
+application and the application can call upon JanusGraph directly through its public API.
+
+
+///////////////////
+4.2.1.3. Short Codes
+If the JanusGraph graph cluster has been previously configured and/or only the storage backend 
+needs to be defined, JanusGraphFactory accepts a colon-separated string representation of 
+the storage backend name and hostname or directory.
+
+graph = JanusGraphFactory.open('cassandra:localhost')
