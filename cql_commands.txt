@@ -1,0 +1,3 @@
+Show all keyspaces: DESCRIBE keyspaces;
+Go to a keyspace: use <key_space>;
+Show all tables: describe tables;

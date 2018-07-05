@@ -9,3 +9,7 @@ Load some data in janusgraph
 1. graph = JanusGraphFactory.open('conf/janusgraph-cassandra-es.properties')
 2. GraphOfTheGodsFactory.load(graph) or GraphOfTheGodsFactory.loadWithoutMixedIndex(graph, true)
 3. g = graph.traversal()
+
+CQLSH setup
+1. Go to cassandra directory.
+2. run bin/cqlsh
